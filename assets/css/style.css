@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    background-color: rgb(235, 239, 242);
+    display: flex;
+    justify-content: space-between;                
+    padding: 20px 10px;
+    
+}
+
+.logo {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.search-section{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 40px;    
+}
+
+.search-box {
+    width: 300px;
+}
+
+
+.row-cards {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: center;
+    gap: 60px;            
+    padding: 10px 60px 40px 60px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(235, 239, 242);
+    padding: 1px;
+    font-size: 12px;
+    text-align: center;
+}
