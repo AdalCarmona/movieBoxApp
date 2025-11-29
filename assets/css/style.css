@@ -20,16 +20,7 @@ h2 {
     font-size: 25px;
     font-weight: 600;
 }
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;  
-    gap: 30px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
+ 
 .search-section{
     display: flex;
     /* justify-content: space-between; */
@@ -42,22 +33,49 @@ h2 {
     height: 22px;
 }
 
+.placeholder:hover {
+    color:rgb(156, 22, 22);
+}
 #category-box{
     width: 300px;
     font-size: 22px;
 }
-
+#category-box:hover {
+   background-color: rgb(165, 66, 12);
+    color: rgb(243, 248, 244);
+    border-color: grey; 
+}
+button:hover {
+  background-color: rgb(165, 81, 12);
+    color: rgb(243, 248, 244);
+    border-color: grey;
+}
+button:active {
+    font-size: 100%;
+    background-color: 0 0 10px brown;
+}
+button:focus {
+    outline: none;
+    background-color: rgb(165, 81, 12);
+    color:white;
+}
 .search-section button {
     width: 100px;
     height: 28px;
+}
+.search-box:hover{
+    background-color: rgb(165, 81, 12);
+    color: rgb(243, 248, 244);
+    border-color: grey;
+    transition: all ease 0.3s;
 }
 
 
 .row-cards {
     display: flex;
-    flex-wrap: wrap;     
+    flex-wrap: center;     
     justify-content: center;
-    gap: 60px;            
+    gap: 30px;            
     padding: 10px 60px 40px 60px;
 }
 
@@ -70,6 +88,12 @@ h2 {
     align-items: center;
     font-size: 22px;
     border-radius: 10px;
+}
+.card:hover{
+  font-size: 2.3rem;
+  color: #e4dddd; 
+  background-color: rgb(165, 81, 12); 
+  transition: all ease 0.3s;  
 }
 
 footer {
