@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Box App</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header class="topbar"> 
-        <h1 class="logo">Movie Box App</h1>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1 class="logo">Movie Box App</h1>
 
-        <nav class="navbar">
-            <a href="#">Account</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#">Account</a>
+      </nav>
     </header>
 
     <main>
-        <h2>Finding a movie</h2>
-        <section class="search-section">
-            <input class="search-box" type="text" placeholder="Search" required>
-            <select id="category-box" name="category">
-                <option value="">-- Select category --</option>
-                <option value="c1">Op1</option>
-                <option value="c2">Op2</option>
-                <option value="c3">Op3</option>
-                <option value="c3">Op4</option>
-        
-            </select>
-            <button type="submit">Sort</button>
-        </section>
-            
-        <section class="contenido">
-            <h2>Select a Movie</h2>
-            <div class="row-cards">
-                <div class="card">Movie</div>
-                <div class="card">Movie</div>
-                <div class="card">Movie</div>
-            </div>
-        </section>
-        
+      <h2>Finding a movie</h2>
+      <section class="search-section">
+        <input
+          class="search-box"
+          id="search-box"
+          type="text"
+          placeholder="Search"
+          required
+        />
+        <select id="category-box" name="category">
+          <option value="">-- Select category --</option>
+        </select>
+        <button id="search-button" type="submit">Sort</button>
+      </section>
 
+      <section class="contenido">
+        <h2>Select a Movie</h2>
+        <div id="movie-box" class="row-cards">
+          <div class="card">Movie</div>
+          <div class="card">Movie</div>
+          <div class="card">Movie</div>
+        </div>
+      </section>
     </main>
+
     <footer>
-        <h3>© 2025 Movie Box App</h3>
+      <h3>© 2025 Movie Box App</h3>
     </footer>
-    
-</body>
+
+    <!-- jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Load category script -->
+    <script src="./assets/js/getCategory/script.js"></script>
+    <!-- Then main.js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

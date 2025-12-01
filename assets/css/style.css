@@ -1,80 +1,77 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .topbar {
-    background-color: rgb(235, 239, 242);
-    display: flex;
-    justify-content: space-between;                
-    padding: 20px 10px;
-    
+  background-color: rgb(235, 239, 242);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
 }
 
 .logo {
-    margin: 0;
-    font-size: 25px;
-    font-weight: 600;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;  
-    gap: 30px;
-    font-size: 18px;
-    font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.search-section{
-    display: flex;
-    /* justify-content: space-between; */
-    justify-content: center;
-    gap: 20px;    
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .search-box {
-    width: 400px;
-    height: 22px;
+  width: 400px;
+  height: 22px;
 }
 
-#category-box{
-    width: 300px;
-    font-size: 22px;
+#category-box {
+  width: 300px;
+  font-size: 22px;
 }
 
 .search-section button {
-    width: 100px;
-    height: 28px;
+  width: 100px;
+  height: 28px;
 }
 
-
 .row-cards {
-    display: flex;
-    flex-wrap: wrap;     
-    justify-content: center;
-    gap: 60px;            
-    padding: 10px 60px 40px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 10px 60px 40px 60px;
 }
 
 .card {
-    width: 150px;
-    height: 200px;
-    border: 2px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 10px;
 }
 
 footer {
-    background-color: rgb(235, 239, 242);
-    padding: 1px;
-    font-size: 12px;
-    text-align: center;
+  background-color: rgb(235, 239, 242);
+  padding: 1px;
+  font-size: 12px;
+  text-align: center;
 }
