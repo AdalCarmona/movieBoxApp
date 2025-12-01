@@ -14,3 +14,31 @@ const PATH = 'https://imdb.iamidiotareyoutoo.com/search?q=' + id + "&tt=&lsn=1&v
 callingAPI(PATH)
 callingAPI(PATH2,headers)
 //console.log(callingAPI(PATH2))
+
+// CAROUSEL Control 
+
+const track = document.querySelector ('.row-cards');
+const nextBtn = document.querySelector('.btn-next');
+const prevBtn = document.querySelector('.btn-prev');
+
+let index = 0;
+const maxIndex = 2;
+
+nextBtn.addEventListener('click', () => {
+    if (index < maxIndex) {
+        index++;
+        moveCarousel();
+    } 
+});
+
+prevBtn.addEventListener('click', () => {
+    if (index > 0) {
+        index--;
+        moveCarousel();
+    } 
+});
+
+function moveCarousel() {
+    const width = document.querySelector('.window-track').clientWidth;
+    track.style.transform = `translateX(${-width * index}px)`;
+}
