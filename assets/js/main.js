@@ -10,3 +10,10 @@ $(document).ready(function () {
     console.error("loadCategories function not found!");
   }
 });
+
+$(document).ready(function(){
+  $("search-button").click(function(){
+    console.log("doing something")
+    getMovies()
+  });
+});
