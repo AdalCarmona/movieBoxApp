@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineBox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="module" src="assets/js/script.js"></script>
+
 </head>
 <body>
+
     <header class="topbar"> 
         <h1 class="logo">CineBox</h1>
     </header>
@@ -21,45 +23,88 @@
                 <option value="c1">Op1</option>
                 <option value="c2">Op2</option>
                 <option value="c3">Op3</option>
-                <option value="c3">Op4</option>
-        
+                <option value="c4">Op4</option>
             </select>
             <button id="search-button" type="submit">Search</button>
         </section>
             
         <section id="container">
             <h2>Select a Movie</h2>
-
+            
+<!-- ====CAROUSEL =====  -->
             <div class="carousel">
-                
-                <button class="btn-prev">&lsaquo;</button>
-
-                <div class="window-track">
-                    
-                    <div class="row-cards">
-                        <img src="image 00" alt="">
-                        <img src="image 01" alt="">
-                        <img src="image 02" alt="">
-                        <img src="image 03" alt="">
-                        <img src="image 04" alt="">
-                        <img src="image 05" alt="">
-                        <img src="image 06" alt="">
-                        <img src="image 07" alt="">
+                <a class="carousel-item" href="#movie 01!">
+                    <div class="carousel-content">
+                        <img src="Picture movie 01">
+                        <div class="caption">
+                            <h3>Movie Title 01 </h3>
+                            <p>Movie 01 brieft description</p>
+                        </div>
                     </div>
+                </a>
 
-                </div>
-                <button class="btn-next">&rsaquo;</button>
+                <a class="carousel-item" href="#movie 02!">
+                    <div class="carousel-content">
+                        <img src="Picture movie 02">
+                        <div class="caption">
+                            <h3>Movie Title  02</h3>
+                            <p>Movie 02 brieft description </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="carousel-item" href="#movie 03!">
+                    <div class="carousel-content">
+                        <img src="Picture movie 03">
+                        <div class="caption">
+                            <h3>Movie Title  03</h3>
+                            <p>Movie 03 brieft description</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="carousel-item" href="#movie 04!">
+                    <div class="carousel-content">
+                        <img src="Picture movie 04">
+                        <div class="caption">
+                            <h3>Movie Title  04</h3>
+                            <p>Movie 04 brieft description</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="carousel-item" href="#movie05!">
+                    <div class="carousel-content">
+                        <img src="Picture movie 05">
+                        <div class="caption">
+                            <h3>Movie Title  05</h3>
+                            <p>Movie 05 brieft description</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="carousel-item" href="#movie 06!">
+                    <div class="carousel-content">
+                        <img src="Picture movie 06">
+                        <div class="caption">
+                            <h3>Movie Title  6</h3>
+                            <p>Movie 06 brieft description</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
         </section>
-        
 
+        
     </main>
 
-    <footer>
-      <h3>© 2025 CineBox</h3>
+    <footer class="bottom-bar">
+        <h4>© 2025 CineBox</h4>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
     <!-- jQuery first -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Load category script -->
@@ -67,7 +112,7 @@
     <!-- Then main.js -->
     <script src="./assets/js/main.js"></script>
     
-  </body>
+</body>
 </html>
 
 

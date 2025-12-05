@@ -64,3 +64,13 @@ function loadCategories() {
 
 // Step 7: Make the function available globally (no export needed for regular scripts)
 // The function is already defined and can be called from main.js
+
+//=======Carousel=======
+M.Carousel.init(document.querySelector('.carousel'), {
+    indicators: true,
+    duration: 200,
+    padding: 10,
+});
+
+
+

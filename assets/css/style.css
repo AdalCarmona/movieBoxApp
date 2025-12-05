@@ -1,91 +1,103 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: rgb(75, 99, 110);
+    padding: 20px;
 }
 
 h2 {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    color: aliceblue;;
+    
 }
 
 .topbar {
-  background-color: rgb(235, 239, 242);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10px;
+    background-color: rgb(232, 101, 106);
+    display: flex;
+    padding: 20px 10px;
+    color: aliceblue;
 }
 
 .logo {
-  margin: 0;
-  font-size: 25px;
-  font-weight: 600;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .search-section{
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     gap: 20px;    
 }
 
 #search-box {
     width: 400px;
-    height: 22px;
+    height: 30px;
+}
+
+select {
+    display: inline-block !important;
+}
+
+#category-box{
+    width: 200px;
+    height: 30px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;   
+}
+
+#category-box:hover {
+    background-color: rgb(243, 175, 86);
+    color: rgb(243, 248, 244);
+    border-color: grey; 
+}
+
+.search-section button {
+    width: 100px;
+    height: 28px;
+}
+
+
+/* =======Carousel Style ========= */
+.carousel-content img {
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    background: rgb(203, 193, 193);   
 }
 
 .carousel {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    padding: 0px;
 }
 
-.row-cards {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.45s ease;
+.caption h3{  
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px; 
+
 }
 
-.carousel img {
-    width: 200px;
-    height: 250px;
-    border-radius: 12px;
-    border:2px solid #000;
+.caption p {
+    position: relative;
+    bottom: 15px;
+    font-size: 12px; 
+    left: 5px;
 }
 
-.window-track {
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-}
-
-.btn-prev, .btn-next {
-    background: rgba(0,0,0,0.4);
-    color: white;
-    border: none;
-    padding: 5px 8px;
-    cursor: pointer;
-    font-size: 30px;
-    border-radius: 5px;
-    cursor:pointer;
-}
-
-.placeholder:hover {
-    color:rgb(156, 22, 22);
-}
-
-
-#category-box{
-    width: 300px;
-    font-size: 22px;
-}
-#category-box:hover {
-    background-color: rgb(165, 66, 12);
-    color: rgb(243, 248, 244);
-    border-color: grey; 
-}
 button:hover {
-    background-color: rgb(165, 81, 12);
+    background-color: rgb(243, 175, 86);
     color: rgb(243, 248, 244);
     border-color: grey;
 }
@@ -98,57 +110,20 @@ button:focus {
     background-color: rgb(165, 81, 12);
     color:white;
 }
-.search-section button {
-  width: 100px;
-  height: 28px;
-}
-.search-box:hover{
-    background-color: rgb(165, 81, 12);
+
+#search-box:hover{
+    background-color:rgb(243, 175, 86);;
     color: rgb(243, 248, 244);
     border-color: grey;
     transition: all ease 0.3s;
 }
 
-<<<<<<< HEAD
-.row-cards {
-    display: flex;
-    flex-wrap: center;     
-    justify-content: center;
-    gap: 30px;            
-    padding: 10px 60px 40px 60px;
-}
-
-.card {
-  width: 150px;
-  height: 200px;
-  border: 2px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  border-radius: 10px;
-}
-.card:hover{
-  font-size: 2.3rem;
-  color: #e4dddd; 
-  background-color: rgb(165, 81, 12); 
-  transition: all ease 0.3s;  
-=======
-
-
-.row-cards img:hover{
-    font-size: 2.3rem;
-    color: #e4dddd; 
-    background-color: rgb(165, 81, 12); 
-    transition: all ease 0.3s;  
->>>>>>> 9e397db8802be0df05dcd7be9d6185eee3fa08e1
-}
-
-footer {
+.bottom-bar h4{
     position: relative;
-    top: 40px;
-    background-color: rgb(235, 239, 242);
-    padding: 1px;
-    font-size: 12px;
+    background-color: rgb(232, 101, 106);
+    padding: 15px;
+    font-size: 15px;
     text-align: center;
+    color: aliceblue;
+    margin: 0;
 }
