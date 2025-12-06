@@ -36,7 +36,7 @@ h2 {
 
 #search-box {
     width: 400px;
-    height: 30px;
+    height: 40px;
 }
 
 select {
@@ -45,7 +45,7 @@ select {
 
 #category-box{
     width: 200px;
-    height: 30px;
+    height: 40px;
     padding: 8px 12px;
     font-size: 18px;
     border: 2px solid #d1d1d1;
@@ -63,7 +63,8 @@ select {
 
 .search-section button {
     width: 100px;
-    height: 28px;
+    height: 40px;
+    border-radius: 8px;
 }
 
 
