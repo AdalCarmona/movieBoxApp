@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineBox</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
@@ -16,84 +16,23 @@
 
     <main>
         <h2>Finding a movie</h2>
-        <section class="search-section">
-            <input id="search-box" type="text" placeholder="Search" required>
+        <form class="search-section">
+            <input id="search-box" name="movieTitle" type="text" placeholder="Search Movie" required>
             <select id="category-box" name="category">
-                <option value=""></option>
-                <option value="c1">Op1</option>
-                <option value="c2">Op2</option>
-                <option value="c3">Op3</option>
-                <option value="c4">Op4</option>
+                <option value="">Selecciona un genero</option>
             </select>
             <button id="search-button" type="submit">Search</button>
-        </section>
+        </form>
             
-        <section id="container">
+        <!-- <section id="container"> -->
             <h2>Select a Movie</h2>
             
 <!-- ====CAROUSEL =====  -->
             <div class="carousel">
-                <a class="carousel-item" href="#movie 01!">
-                    <div class="carousel-content">
-                        <img src="Picture movie 01">
-                        <div class="caption">
-                            <h3>Movie Title 01 </h3>
-                            <p>Movie 01 brieft description</p>
-                        </div>
-                    </div>
-                </a>
+            </div>   
 
-                <a class="carousel-item" href="#movie 02!">
-                    <div class="carousel-content">
-                        <img src="Picture movie 02">
-                        <div class="caption">
-                            <h3>Movie Title  02</h3>
-                            <p>Movie 02 brieft description </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="carousel-item" href="#movie 03!">
-                    <div class="carousel-content">
-                        <img src="Picture movie 03">
-                        <div class="caption">
-                            <h3>Movie Title  03</h3>
-                            <p>Movie 03 brieft description</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="carousel-item" href="#movie 04!">
-                    <div class="carousel-content">
-                        <img src="Picture movie 04">
-                        <div class="caption">
-                            <h3>Movie Title  04</h3>
-                            <p>Movie 04 brieft description</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="carousel-item" href="#movie05!">
-                    <div class="carousel-content">
-                        <img src="Picture movie 05">
-                        <div class="caption">
-                            <h3>Movie Title  05</h3>
-                            <p>Movie 05 brieft description</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="carousel-item" href="#movie 06!">
-                    <div class="carousel-content">
-                        <img src="Picture movie 06">
-                        <div class="caption">
-                            <h3>Movie Title  6</h3>
-                            <p>Movie 06 brieft description</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
+            
+        <!-- </section> -->
 
         
     </main>
@@ -104,15 +43,15 @@
 
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <script type="module" src="assets/js/script.js"></script>
     <!-- jQuery first -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Load category script -->
     <script src="./assets/js/getCategory/script.js"></script>
+    
     <!-- Then main.js -->
     <script src="./assets/js/main.js"></script>
     
 </body>
 </html>
-
-

@@ -4,14 +4,14 @@ body {
 
 main{
     background-color: rgb(75, 99, 110);
-    padding: 20px;
+    padding: 10px;
 }
 
 h2 {
     text-align: center;
     padding: 5px;
     font-size: 25px;
-    color: aliceblue;;
+    color: aliceblue;
     
 }
 
@@ -35,12 +35,12 @@ h2 {
 }
 
 #search-box {
-    width: 400px;
+    width: 260px;
     height: 40px;
 }
 
 select {
-    display: inline-block !important;
+    display: inline-block;
 }
 
 #category-box{
@@ -70,31 +70,21 @@ select {
 
 /* =======Carousel Style ========= */
 .carousel-content img {
-    width: 200px;
-    height: 280px;
+    width: 220px;
+    height: 320px;
     border-radius: 10px;
-    background: rgb(203, 193, 193);   
-}
-
-.carousel {
+    background: rgb(203, 193, 193);
+    
     position: relative;
-    padding: 0px;
+    top: -70px;
 }
 
-.caption h3{  
+.caption {  
     position: absolute;
-    bottom: 150px;
+    bottom: 265px;
     left: 10px;
     color: rgb(255, 255, 255);
-    font-size: 20px; 
-
-}
-
-.caption p {
-    position: relative;
-    bottom: 15px;
-    font-size: 12px; 
-    left: 5px;
+    font-size: 16px; 
 }
 
 button:hover {
