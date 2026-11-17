@@ -2,6 +2,11 @@
 
 A modern web application for discovering and browsing movies using The Movie Database (TMDB) API. MovieBox provides an intuitive interface to search for movies, filter by genre, and browse through popular films in an interactive carousel.
 
+## Test the app 
+
+**Enter to the link:** [adalcarmona.github.io/movieBoxApp](https://adalcarmona.github.io/movieBoxApp/)
+
+
 ## Features
 
 - 🔍 **Movie Search**: Search for movies by title
