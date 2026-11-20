@@ -9,7 +9,7 @@ main{
 
 h2 {
     text-align: center;
-    padding: 5px;
+    padding: 1px;
     font-size: 25px;
     color: aliceblue;
     
@@ -117,4 +117,29 @@ button:focus {
     text-align: center;
     color: aliceblue;
     margin: 0;
+}
+
+.caption {
+    /* Conserva las propiedades actuales, evitar traslapes entre <h2> y <h3>${movie.title}</h3> */
+    right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#movie-details,
+#movie-description {
+    width: min(90%, 720px);
+    margin: 18px auto;
+    padding: 10px 12px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#movie-details h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
 }

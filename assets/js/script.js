@@ -3,6 +3,7 @@ var apiKey = "d7767b590a17c198fed002bd785a1fbb";
 var inputQuery = document.getElementById("search-box");
 var categoryBox = document.getElementById('category-box');
 var searchButton = document.getElementById("search-button");
+var movieDescription = document.getElementById("movie-description");
 
 // Construcción genre url
 var genreURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=" + apiKey;
@@ -37,6 +38,7 @@ searchButton.addEventListener("click", function(event) {
         var item = document.createElement('a');
         item.classList.add('carousel-item');
         item.href = '#';
+        item.dataset.movieId = movie.id;
         item.innerHTML = `
                 <div class="carousel-content">
                     <img src="${posterURL}">
@@ -103,6 +105,7 @@ categoryBox.addEventListener('change', function(event) {
         var item = document.createElement('a');
         item.classList.add('carousel-item');
         item.href = '#';
+        item.dataset.movieId = movie.id;
         item.innerHTML = `
                 <div class="carousel-content">
                     <img src="${posterURL}">
@@ -122,4 +125,28 @@ categoryBox.addEventListener('change', function(event) {
           console.error(error);
       });
   });
+
+// Fetch and display movie details when a carousel item is clicked.
+carousel.addEventListener('click', async function(event) {
+  var item = event.target.closest('.carousel-item');
+  if (!item) return;
+
+  event.preventDefault();
+  movieDescription.textContent = 'Cargando descripción...';
+
+  try {
+    var detailsURL = `https://api.themoviedb.org/3/movie/${item.dataset.movieId}?api_key=${apiKey}&language=es-MX`;
+    var response = await fetch(detailsURL);
+
+    if (!response.ok) {
+      throw new Error(`Error HTTP ${response.status}`);
+    }
+
+    var movie = await response.json();
+    movieDescription.textContent = movie.overview || 'No hay descripción disponible.';
+  } catch (error) {
+    console.error('Error al cargar la descripción:', error);
+    movieDescription.textContent = 'No se pudo cargar la descripción.';
+  }
+});
 

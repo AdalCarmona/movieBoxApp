@@ -123,4 +123,4 @@ This project is for educational purposes.
 
 ---
 
-© 2025 MovieBox
+© 2026 MovieBox
