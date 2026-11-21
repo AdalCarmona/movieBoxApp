@@ -81,10 +81,21 @@ The project uses The Movie Database (TMDB) API. The API configuration is stored 
 ## Usage
 
 1. **Search for Movies**:
-
    - Enter a movie title in the search box
    - Click the "Search" button
 
+2. **Filter by Genre**:
+   - Select a genre from the category dropdown
+   - The dropdown is automatically populated with available genres from TMDB
+
+3. **View Movie Details**:
+   - Click a movie poster in the carousel
+   - The movie overview appears in the "Movie Details" section below the carousel
+   - A loading message appears while the details are being fetched
+
+4. **Browse Movies**:
+   - Use the left/right arrow buttons to navigate through the movie carousel
+   - Hover over movie posters for visual feedback
 2. **Filter by Genre**:
 
    - Select a genre from the category dropdown
@@ -96,7 +107,6 @@ The project uses The Movie Database (TMDB) API. The API configuration is stored 
 
 ## Features in Development
 
-- Movie details display
 - Movie recommendations
 - User favorites/bookmarks
 - Advanced search filters

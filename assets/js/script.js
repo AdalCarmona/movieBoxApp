@@ -135,7 +135,7 @@ carousel.addEventListener('click', async function(event) {
   movieDescription.textContent = 'Cargando descripción...';
 
   try {
-    var detailsURL = `https://api.themoviedb.org/3/movie/${item.dataset.movieId}?api_key=${apiKey}&language=es-MX`;
+    var detailsURL = `https://api.themoviedb.org/3/movie/${item.dataset.movieId}?api_key=${apiKey}&language=en-US`;
     var response = await fetch(detailsURL);
 
     if (!response.ok) {
